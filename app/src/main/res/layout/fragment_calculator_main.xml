@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/window"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="15dp"
+                android:background="@color/white"
+                android:gravity="end"
+                android:hint="@string/btnZero"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="45sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:useDefaultMargins="true" >
+        <com.google.android.material.button.MaterialButton
+
+
+            />
+
+        <Button
+            android:id="@+id/btnZero"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:text="@string/btnZero"
+            style="@style/Numbers"/>
+
+        <Button
+            android:id="@+id/btnFact"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:text="@string/btnFact"
+            style="@style/Operations"/>
+
+        <Button
+            android:id="@+id/btnFive"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="@string/btnFive"
+            style="@style/Numbers"/>
+
+        <Button
+            android:id="@+id/btnRightSide"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="@string/btnRightSide"
+            style="@style/Operations"/>
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:text="@string/btnPlus"
+            style="@style/Operations"/>
+
+        <Button
+            android:id="@+id/btnSeven"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="@string/btnSeven"
+            style="@style/Numbers"/>
+
+        <Button
+            android:id="@+id/btnDivision"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:text="@string/btnDivision"
+            style="@style/Operations"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="67dp"
+            android:layout_height="75dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/btnDelete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:text="@string/btnMinus"
+            style="@style/Operations"/>
+
+        <Button
+            android:id="@+id/btnEight"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="@string/btnEight"
+            style="@style/Numbers"/>
+
+        <Button
+            android:id="@+id/btnLeftSide"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="@string/btnLeftSide"
+            style="@style/Operations"/>
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:text="@string/btnMultiply"
+            style="@style/Operations"/>
+
+        <Button
+            android:id="@+id/btnExponent"
+            android:layout_row="2"
+            android:layout_column="4"
+            android:text="@string/btnExponent"
+            style="@style/Operations"/>
+
+        <Button
+            android:id="@+id/btnThree"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:text="@string/btnThree"
+            style="@style/Numbers"/>
+
+        <Button
+            android:id="@+id/btnRemains"
+            android:layout_row="3"
+            android:layout_column="4"
+            android:text="@string/btnRemains"
+            style="@style/Operations"/>
+
+        <Button
+            android:id="@+id/btnEqual"
+            android:layout_width="67dp"
+            android:layout_height="150dp"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/light_grey"
+            android:text="@string/btnEqual"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/textSize" />
+
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="@string/btnFour"
+            style="@style/Numbers"/>
+
+        <Button
+            android:id="@+id/btnDot"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:text="@string/btnDot"
+            style="@style/Operations"/>
+
+        <Button
+            android:id="@+id/btnSix"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:text="@string/btnSix"
+            style="@style/Numbers"/>
+
+        <Button
+            android:id="@+id/btnTwo"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:text="@string/btnTwo"
+            style="@style/Numbers"/>
+
+        <Button
+            android:id="@+id/btnNine"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:text="@string/btnNine"
+            style="@style/Numbers"/>
+
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:text="@string/btnOne"
+            style="@style/Numbers"/>
+
+        <Button
+            android:id="@+id/btnSquare"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:text="@string/btnSquare"
+            style="@style/Operations"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="67dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:backgroundTint="@color/red"
+            android:text="@string/btnClear"
+            android:textSize="@dimen/textSize" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

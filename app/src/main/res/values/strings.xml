@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">calculator</string>
+    <string name="name">Калькулятор GB MaD-ArrA</string>
+    <string name="btnClear">C</string>
+    <string name="btnZero">0</string>
+    <string name="btnEqual">=</string>
+    <string name="btnPlus">+</string>
+    <string name="btnDot">.</string>
+    <string name="btnMultiply">x</string>
+    <string name="btnOne">1</string>
+    <string name="btnTwo">2</string>
+    <string name="btnThree">3</string>
+    <string name="btnFour">4</string>
+    <string name="btnFive">5</string>
+    <string name="btnSix">6</string>
+    <string name="btnMinus">-</string>
+    <string name="btnSeven">7</string>
+    <string name="btnEight">8</string>
+    <string name="btnNine">9</string>
+    <string name="btnSquare">√</string>
+    <string name="btnDivision">÷</string>
+    <string name="btnFact">x!</string>
+    <string name="btnLeftSide">(</string>
+    <string name="btnRightSide">)</string>
+    <string name="btnRemains">%</string>
+    <string name="btnExponent">x^</string>
+    <string name="btnDelete">Del</string>
+</resources>
